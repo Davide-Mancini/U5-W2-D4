@@ -19,5 +19,8 @@ public record AutoriDTO(
         @Email(message = "formato non corretto")
         String email,
         @NotNull(message = "data obbligatoria")
-        LocalDate dataDiNascita) {
+        LocalDate dataDiNascita,
+
+        String avatar
+) {
 }
