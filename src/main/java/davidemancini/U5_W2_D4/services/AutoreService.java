@@ -67,6 +67,6 @@ public class AutoreService {
        }catch (IOException ex){
         throw new RuntimeException(ex);
        }
-        return trovato;
+        return autoriRepository.save(trovato);
     }
 }
